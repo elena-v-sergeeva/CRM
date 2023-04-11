@@ -14,15 +14,28 @@ body {
   overflow: hidden;
 }
 
-.overlay {
-  background-color: #E5E5E5;
+.mobile {
+  padding-top: 50px;
 }
 
-.form {
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  background-color: #E5E5E5;
   max-width: 792px;
   margin: 0 auto;
   position: relative;
-  padding: 32px 106px 68px;
+}
+
+.form {
+  max-width: 580px;
+  margin: 0 auto;
+  position: relative;
+  padding: 32px 0 68px;
 }
 
 .form__fieldset {
@@ -133,11 +146,7 @@ body {
   background-color: #cccccc;
 }
 
-.form__button {
-  cursor: pointer;
-}
-
-.form__button_type_close {
+.close {
   position: absolute;
   background-color: #E5E5E5;
   right: 30px;
@@ -145,9 +154,10 @@ body {
   border: none;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 
-.form__button_type_submit {
+.form__button {
   margin-right: 30px;
   padding: 10px 25px ;
   background: #6D5BD0;
@@ -159,6 +169,7 @@ body {
   color: #FFFFFF;
   float: right;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* .fieldset__input:focus:before {

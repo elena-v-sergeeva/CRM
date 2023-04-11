@@ -10,45 +10,48 @@
   <title>CRM</title>
 </head>
 <body>
-  <div class="overlay">
-    <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-      <button class="form__button form__button_type_close">
+  <div class="mobile">
+    <div class="overlay"></div>
+    <div class="popup">
+      <button class="close">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
           <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
         </svg>
       </button>
 
-      <h3 class="form__title">Добавить товар</h3>
+      <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <h3 class="form__title">Добавить товар</h3>
 
-      <fieldset class="form__fieldset fieldset">
-        <label class="fieldset__label" for="nomination">Наименование</label>
-        <input class="fieldset__input" id="nomination" type="text" name="nomination" required>
-      
-        <label class="fieldset__label" for="category">Категория</label>
-        <input class="fieldset__input" id="category" type="text" name="category" required>
-      
-        <label class="fieldset__label" for="units">Единицы измерения</label>
-        <input class="fieldset__input" id="units" type="text" name="units" required>
-      
-        <label class="fieldset__label" for="discount">Дисконт</label>
-        <div class="fieldset__optional">
-          <input class="fieldset__checkbox" aria-label="Добавить скидку" type="checkbox">
-          <input class="fieldset__input" id="discount" type="number" name="discount" disabled>
-        </div>
-            
-        <label  class="fieldset__label" for="description">Описание</label>
-        <textarea class="fieldset__input" id="description" name="description" rows="5" required></textarea>
+        <fieldset class="form__fieldset fieldset">
+          <label class="fieldset__label" for="nomination">Наименование</label>
+          <input class="fieldset__input" id="nomination" type="text" name="nomination" required>
         
-        <label class="fieldset__label" for="quantity">Количество</label>
-        <input class="fieldset__input" id="quantity" type="number" name="quantity" required>
+          <label class="fieldset__label" for="category">Категория</label>
+          <input class="fieldset__input" id="category" type="text" name="category" required>
+        
+          <label class="fieldset__label" for="units">Единицы измерения</label>
+          <input class="fieldset__input" id="units" type="text" name="units" required>
+        
+          <label class="fieldset__label" for="discount">Дисконт</label>
+          <div class="fieldset__optional">
+            <input class="fieldset__checkbox" aria-label="Добавить скидку" type="checkbox">
+            <input class="fieldset__input" id="discount" type="number" name="discount" disabled>
+          </div>
+              
+          <label  class="fieldset__label" for="description">Описание</label>
+          <textarea class="fieldset__input" id="description" name="description" rows="5" required></textarea>
+          
+          <label class="fieldset__label" for="quantity">Количество</label>
+          <input class="fieldset__input" id="quantity" type="number" name="quantity" required>
+        
+          <label class="fieldset__label" for="price">Цена</label>
+          <input class="fieldset__input" id="price" type="number" name="price" required>
+        </fieldset>
       
-        <label class="fieldset__label" for="price">Цена</label>
-        <input class="fieldset__input" id="price" type="number" name="price" required>
-      </fieldset>
-    
-      <button class="form__button form__button_type_submit" type="submit">Добавить товар</button>
-    </form>
-  </div> 
+        <button class="form__button" type="submit">Добавить товар</button>
+      </form>
+    </div>
+  </div>  
 </body>
 </html>
