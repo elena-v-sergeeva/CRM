@@ -10,17 +10,12 @@ body {
   font-size: 12px;
   line-height: 1.25;
   color: #6E6893;
-  max-height: 100vh;
-  overflow: hidden;
-}
-
-.mobile {
-  padding-top: 50px;
 }
 
 .overlay {
   position: fixed;
   inset: 0;
+  padding: 50px 0 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -32,10 +27,9 @@ body {
 }
 
 .form {
-  max-width: 580px;
-  margin: 0 auto;
+  display: flow-root;
   position: relative;
-  padding: 32px 0 68px;
+  padding: 32px 106px;
 }
 
 .form__fieldset {
@@ -52,7 +46,6 @@ body {
 
 .fieldset {
   padding: 28px;
-  max-width: 580px;
   background: #FFFFFF;
   border: #FFFFFF;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -146,7 +139,7 @@ body {
   background-color: #cccccc;
 }
 
-.close {
+.popup__close {
   position: absolute;
   background-color: #E5E5E5;
   right: 30px;
@@ -155,6 +148,7 @@ body {
   padding: 0;
   margin: 0;
   cursor: pointer;
+  z-index: 5;
 }
 
 .form__button {
